@@ -225,7 +225,7 @@ let refDate = NSDate(timeIntervalSince1970: 1447630200) // Sun, 15 Nov 2015 23:3
 let newDate = refDate + 2.hours + 1.days // Mon, 17 Nov 2015 01:30:00 UTC
 
 // With DateInRegion
-let format = DateFormat.Custom("YYYY-mm-dd")
+let format = DateFormat.Custom("YYYY-MM-dd")
 let regionRome = DateRegion(tzType: TimeZoneNames.Europe.Rome)
 let initialDateInRegion = DateInRegion(fromString:"2012-01-01", format: format, region: regionRome) // 2012-01-01 00:00:00 CET
 let newDateInRegion = initialDateInRegion + 1.days + 2.hours // 2012-01-02 02:00:00 CET
